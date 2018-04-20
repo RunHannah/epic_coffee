@@ -1,10 +1,14 @@
-<h1>Products</h1>
+<div class="container">
+  <h1>Coffee Blends</h1>
+</div>
 
-<ul>
+
+  <%= link_to "New Product", new_product_path %>
+
+
+<ol>
   <% @products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
 
     <% end %>
-</ul>
-
-<%= link_to "New Product", new_product_path %>
+</ol>

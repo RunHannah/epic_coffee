@@ -1,27 +1,33 @@
 <h1><%= @product.name %></h1>
 
+<div class="container">
+  <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+  <p><%= link_to "Edit this product", edit_product_path(@product) %></p>
+  <p><%= link_to "Delete", product_path(@product),
+                              :data => {:confirm => "Confirm delete?",
+                                :method => "delete"} %></p>
+
+    <p><%= link_to "Return to Products", products_path %></p>
+  </div>
+
 <% if @product.reviews.any? %>
   <h3>Reviews: </h3>
 
   <ul>
     <% @product.reviews.each do |review| %>
       <li>
-        Author: <%= review.author %> |
-        Text: <%= review.content_body %> |
-        Rating: <%= review.rating %> |
+        <strong>Author: </strong><%= review.author %>
+        <br>
+        <strong>Text: </strong><%= review.content_body %>
+        <br>
+        <strong>Rating: </strong><%= review.rating %>
+        <br>
       </li>
     <% end %>
   </ul>
+  <hr>
 
 <% else %>
   <p>There are no reviews for this product.</p>
 
 <% end %>
-
-<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
-<p><%= link_to "Edit this product", edit_product_path(@product) %></p>
-<p><%= link_to "Delete", product_path(@product),
-                        :data => {:confirm => "Confirm delete?",
-                                  :method => "delete"} %></p>
-
-<p><%= link_to "Return to Products", products_path %></p>

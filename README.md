@@ -1,24 +1,47 @@
-# README
+# Epic-coffee
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### Epicodus Rails Course Week 1 - Code Review
 
-Things you may want to cover:
+##### An application to view and review coffee blends 04/20/2018
 
-* Ruby version
+## By Hannah Lee
 
-* System dependencies
+# Description
 
-* Configuration
+This is an application using Ruby on Rails demonstrating CRUD functionality, seeding PostgreSQL with gem Faker. Users are able to view currently available coffee blends, reviews, and add, delete, and update coffee blends.
 
-* Database creation
+## Technologies Used
 
-* Database initialization
+Application: Ruby, Rails<br>
+Testing: Rspec, Capybara<br>
+Database: Postgres
+Gem: Faker
 
-* How to run the test suite
+```
+$ git clone https://github.com/RunHannah/epic_coffee
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Install required gems:
+```
+$ bundle install
+```
 
-* Deployment instructions
+Create databases:
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* ...
+Start the webserver:
+```
+$ rails s
+```
+
+Navigate to `localhost:3000` in browser.
+
+### License
+
+  *MIT License*
+
+Copyright (c) 2018 **Hannah Lee**
