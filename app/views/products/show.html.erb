@@ -1,3 +1,8 @@
 <h1><%= @product.name %></h1>
 
+<p><%= link_to "Edit", edit_product_path(@product) %></p>
+<p><%= link_to "Delete", product_path(@product),
+                        :data => {:confirm => "Confirm delete?",
+                                  :method => "delete"} %></p>  
+
 <p><%= link_to "Return to Products", products_path %></p>
