@@ -2,10 +2,16 @@
 
 <ul>
   <% @products.each do |product| %>
-    <h4>Product Name: <%= product.name %></h4>
-    <li>Cost: <%= product.cost %></li>
-    <li>Country of Origin: <%= product.country_of_origin %></li>
+    <li><%= link_to product.name, product_path(product) %></li>
+
     <% end %>
 </ul>
 
 <%= link_to "New Product", new_product_path %>
+
+
+
+
+<!-- <h4>Product Name: <%= product.name %></h4>
+<li>Cost: <%= product.cost %></li>
+<li>Country of Origin: <%= product.country_of_origin %></li> -->

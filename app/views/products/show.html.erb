@@ -6,9 +6,9 @@
   <ul>
     <% @product.reviews.each do |review| %>
       <li>
-        <%= review.author %>
-        <%= review.content_body %>
-        <%= review.rating %>
+        Author: <%= review.author %>
+        Text: <%= review.content_body %>
+        Rating: <%= review.rating %>
       </li>
     <% end %>
   </ul>
