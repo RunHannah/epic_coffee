@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'products#index'
+  root :to => 'welcome#landing'
 
   resources :products do
     resources :reviews
