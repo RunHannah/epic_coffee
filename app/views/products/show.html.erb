@@ -6,9 +6,9 @@
   <ul>
     <% @product.reviews.each do |review| %>
       <li>
-        Author: <%= review.author %>
-        Text: <%= review.content_body %>
-        Rating: <%= review.rating %>
+        Author: <%= review.author %> |
+        Text: <%= review.content_body %> |
+        Rating: <%= review.rating %> |
       </li>
     <% end %>
   </ul>
@@ -19,6 +19,7 @@
 <% end %>
 
 <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+<p><%= link_to "Edit this product", edit_product_path(@product) %></p>
 <p><%= link_to "Delete", product_path(@product),
                         :data => {:confirm => "Confirm delete?",
                                   :method => "delete"} %></p>
