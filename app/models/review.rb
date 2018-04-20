@@ -3,5 +3,5 @@ class Review < ActiveRecord::Base
   validates :content_body, :presence => true
   validates :rating, :presence => true
 
-  
+  belongs_to :product
 end
