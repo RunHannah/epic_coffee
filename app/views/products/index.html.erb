@@ -2,6 +2,8 @@
 
 <ul>
   <% @products.each do |product| %>
-    <li><%= product.name %></li>
-  <% end %>
+    <h4>Product Name: <%= product.name %></h4>
+    <li>Cost: <%= product.cost %></li>
+    <li>Country of Origin: <%= product.country_of_origin %></li>
+    <% end %>
 </ul>
