@@ -7,21 +7,19 @@
 </div>
 
 
-<div class="container">
+<div id="landing-page" class="container">
   <h3>Recently added Coffee Blends</h3>
   <ul>
     <% @products.three_most_recent.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
+    <li style="list-style:none;"><%= link_to product.name, product_path(product) %></li>
 
     <% end %>
   </ul>
-</div>
 
-<div class="container">
   <h3>Coffee Blends with the most reviews</h3>
   <ul>
     <% @products.most_reviews.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
+    <li style="list-style:none;"><%= link_to product.name, product_path(product) %></li>
 
     <% end %>
   </ul>
