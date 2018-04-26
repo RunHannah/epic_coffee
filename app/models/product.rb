@@ -14,5 +14,5 @@ class Product < ActiveRecord::Base
     .limit(10)
     )}
 
-  scope :made_in_usa, -> { where(country_of_origin: 'USA').limit(5) }
+  scope :made_in_usa, -> { where(country_of_origin: 'USA').limit(10) }
 end

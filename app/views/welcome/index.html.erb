@@ -1,8 +1,8 @@
 
 <div class="container" id="header">
-  <h1 id=company_name>Epic-coffee</h1>
+  <h1 id=company_name>Epic-Coffee</h1>
 
-  <%= link_to "See List of Current Coffee Blends", products_path() %>
+  <h3><%= link_to "See List of Current Coffee Blends", products_path() %></h3>
   <br>
 </div>
 
@@ -11,7 +11,7 @@
   <h3>Recently added Coffee Blends</h3>
   <ul>
     <% @products.three_most_recent.each do |product| %>
-    <li style="list-style:none;"><%= link_to product.name, product_path(product) %></li>
+    <h4><li style="list-style:none;"><%= link_to product.name, product_path(product) %></h4></li>
 
     <% end %>
   </ul>
@@ -19,7 +19,15 @@
   <h3>Coffee Blends with the most reviews</h3>
   <ul>
     <% @products.most_reviews.each do |product| %>
-    <li style="list-style:none;"><%= link_to product.name, product_path(product) %></li>
+    <h4><li style="list-style:none;"><%= link_to product.name, product_path(product) %></h4></li>
+
+    <% end %>
+  </ul>
+
+  <h3>Coffee Blends made in the USA</h3>
+  <ul>
+    <% @products.made_in_usa.each do |product| %>
+    <h4><li style="list-style:none;"><%= link_to product.country_of_origin, product_path(product) %></h4></li>
 
     <% end %>
   </ul>
