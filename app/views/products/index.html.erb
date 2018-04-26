@@ -2,13 +2,14 @@
   <h1>Coffee Blends</h1>
 </div>
 
+<div class="container">
+  <h3><%= link_to "New Product", new_product_path %></h3>
 
-  <%= link_to "New Product", new_product_path %>
-
-
-<ol>
-  <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
+  <h3>Coffee Blend and Country of Origin</h3>
+  <ol>
+    <% @products.each do |product| %>
+    <li><%= link_to product.name, product_path(product) %>, <%= product.country_of_origin %></li>
 
     <% end %>
-</ol>
+  </ol>
+</div>
