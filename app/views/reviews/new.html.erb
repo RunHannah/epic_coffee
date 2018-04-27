@@ -1,3 +1,11 @@
-<h1>New review for <%= @product.name %></h1>
-
-<%= render 'form' %>
+<div class="container" class="form-fields">
+  <h1>New review for <%= @product.name %></h1>
+  <br>
+  <nav>
+  <button><%= link_to "Home", root_path %></button>
+  <button><%= link_to "Return to Coffee Blends List", products_path %></button>
+  </nav>
+  <hr>
+  
+  <%= render 'form' %>
+</div>
