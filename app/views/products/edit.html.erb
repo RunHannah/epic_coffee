@@ -1,5 +1,11 @@
-<div class="container" class="form-fields">  
+<div class="container" class="form-fields">
   <h1>Edit Product</h1>
+  <br>
+  <nav>
+  <button><%= link_to "Home", root_path %></button>
+  <button><%= link_to "Return to Coffee Blends List", products_path %></button>
+  </nav>
+  <hr>
 
   <%= render "form" %>
 </div>
