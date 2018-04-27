@@ -29,6 +29,7 @@ button {
   color: grey;
   background-color: rgba(0,0,0,0.2);
   font-family: 'Rosario', sans-serif;
+  margin-right: 5px;
 }
 
 .card {
@@ -50,4 +51,9 @@ input {
 
 h1, h2, h3 {
   font-family: 'Rosario', sans-serif;
+}
+
+#flash-notice {
+  text-align: center;
+  color: yellow;
 }
