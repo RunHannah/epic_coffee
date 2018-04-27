@@ -4,8 +4,8 @@
   <br>
   <nav>
   <button><%= link_to "Home", root_path %></button>
-  <button><%= link_to "Add a review", new_product_review_path(@product) %></button>
-  <button><%= link_to "Edit this product", edit_product_path(@product) %></button>
+  <button><%= link_to "Add a Review", new_product_review_path(@product) %></button>
+  <button><%= link_to "Edit This Blend", edit_product_path(@product) %></button>
   <button><%= link_to "Delete", products_path(@product),
                               :data => {:confirm => "Confirm delete?",
                                 :method => "destroy"} %></button>

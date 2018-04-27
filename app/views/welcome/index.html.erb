@@ -10,7 +10,7 @@
 
 
 <div id="landing-page" class="container">
-  <h3>Recently added Coffee Blends</h3>
+  <h3>Recently Added Coffee Blends</h3>
   <ul>
     <% @products.three_most_recent.each do |product| %>
     <h4><li style="list-style:none;"><%= link_to product.name, product_path(product) %></h4></li>
@@ -18,7 +18,7 @@
     <% end %>
   </ul>
 
-  <h3>Coffee Blends with the most reviews</h3>
+  <h3>Coffee Blends with the Most Reviews</h3>
   <ul>
     <% @products.most_reviews.each do |product| %>
     <h4><li style="list-style:none;"><%= link_to product.name, product_path(product) %></h4></li>
@@ -26,7 +26,7 @@
     <% end %>
   </ul>
 
-  <h3>Coffee Blends made in the USA</h3>
+  <h3>Coffee Blends Made in the USA</h3>
   <ul>
     <% @products.made_in_usa.each do |product| %>
     <h4><li style="list-style:none;"><%= link_to product.country_of_origin, product_path(product) %></h4></li>
