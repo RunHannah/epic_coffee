@@ -19,10 +19,10 @@
           <% @product.reviews.each do |review| %>
           <div class="card">
             <div class="card-body">
-            <li>
-              <strong>Author: </strong><%= review.author %>
+            <li style="list-style:none;">
+              <em><strong>Author: </strong></em><%= review.author %>
               <br>
-              <strong>Text: </strong><%= review.content_body %>
+              <em><strong>Text: </strong></em><%= review.content_body %>
               <br>
               <strong>Rating: </strong><%= review.rating %>
               <br>

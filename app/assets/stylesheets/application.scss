@@ -26,5 +26,14 @@ li {
 button {
   border-radius: 3px;
   color: grey;
-  background-color: black;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.card {
+  margin-bottom: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+hr {
+  background-color: white;
 }
