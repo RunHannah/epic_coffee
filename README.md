@@ -19,10 +19,10 @@ This is an application using Ruby on Rails demonstrating CRUD functionality, see
 
 ## Technologies Used
 
-Application: Ruby, Rails
-Testing: Rspec, Capybara
-Database: PostgreSQL
-Gem: Faker
+Application: Ruby, Rails<br>
+Testing: Rspec, Capybara<br>
+Database: PostgreSQL<br>
+Gem: Faker<br>
 
 Clone repository
 ```
